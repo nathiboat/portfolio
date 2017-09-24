@@ -1,58 +1,44 @@
 <template>
-  <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        portfolio
-      </h1>
-      <h2 class="subtitle">
-        My personal website
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6  large-block ">
+          <div class="card light multiple-desktop" >
+            <div class="card-body">
+              <span class="tight">
+                <h2>Nathi Taengnim</h2>
+                <p>Web Developer</p>
+              </span>
+              <h2 class="tight">Skill</h2>
+              <hr/>
+            </div>
+          </div>
+
+          <img src="img/graph1.svg" alt="map" class="info-g">
+        </div>
+        <div class="col-3  med-block ">
+          <div class="card light multiple-desktop" >
+            <div class="card-body">
+              <span class="text-center">
+                <h2>Next Class</h2>
+                <hr>
+                <p>Vue js Advance</p>
+              </span>
+              <hr/>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-3 dark med-block multiple-desktop">
+
+                <span id="chart1" class="chart" data-percent="62">
+		          <span class="percent">62</span>
+                <canvas height="187" width="187" style="height: 150px; width: 150px;"></canvas></span>
+          <span class="tight"><h2>All star</h2>
+                    <hr>
+                <p>Your current all star rating</p></span>
+          <hr>
+        </div>
       </div>
     </div>
-  </section>
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
-
-export default {
-  components: {
-    Logo
-  }
-}
-</script>
-
-<style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>

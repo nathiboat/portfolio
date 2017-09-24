@@ -1,4 +1,9 @@
 module.exports = {
+  plugins: ['~/plugins/global.js'],
+  css: [
+    '@/assets/scss/bootstrap/bootstrap.scss',
+    '@/assets/scss/fa/font-awesome.scss'
+  ],
   /*
   ** Headers of the page
   */
